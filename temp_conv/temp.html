@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Logs for JS</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: hsl(0, 0%, 95%)
+        }
+        
+        .container{
+            margin-top: 50px;
+        }
+
+        form{
+            text-align: center;
+            background-color: white;
+            max-width: 450px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid black;            
+        }
+        
+        h2{
+            color: rgb(73, 73, 211);
+        }
+        
+        #num-box{
+            height: 20px;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+
+        #Submit{
+            color: white;
+            background-color: red;
+            width: 90px;
+            height: 30px;
+            font-size: 1rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <form>
+            <h2>Temperature Conversion:</h2>
+            <input type="number" id="num-box" name="nums" value="0" placeholder="Enter a Number"> <br> <br>
+            <input type="radio"  id="Celsius" name="unit"> <label for="Celsius">Convert Celsius to Farenheit</label> <br>
+            <input type="radio" id="Farenheit" name="unit"> <label for="Farenheit">Convert Farenheit to Celsius</label> <br> <br>
+            <button type="button" onclick="Converter()" id="Submit"><strong>Submit</strong></button>
+            <h3 id="result"></h3>
+        </form>
+    </div>
+
+
+    <script src="temp.js"></script>
+</body>
+
+</html>
